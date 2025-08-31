@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPENSPACE - redirect</title>
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+    <style>
+        @font-face {
+        font-family: 'CreatoDisplay';
+        src: url('fontes/creato_display/CreatoDisplay-Light.otf') format('opentype');
+    }
+        h1 {
+            font-family: 'CreatoDisplay', sans-serif;
+            font-size: 25px;
+        }
+        body {
+            overflow: hidden;
+            background: #fff !important;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'CreatoDisplayBold', sans-serif;
+        }
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .loader {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: none;
+            margin-bottom: 18px;
+            position: relative;
+        }
+        .orbit-center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 18px;
+            height: 18px;
+            margin-left: -9px;
+            margin-top: -9px;
+            background: #000;
+            border-radius: 50%;
+            opacity: 1;
+            z-index: 2; 
+            animation: center-pulse 1.2s infinite alternate;
+        }
+        .orbit-dot {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #000;
+            opacity: 1;
+            top: 50%;
+            left: 50%;
+            margin-left: -7px;
+            margin-top: -7px;
+            animation: orbit 1.2s linear infinite;
+            visibility: visible;
+        }
+        .orbit-dot:nth-child(2) { animation-delay: 0s; }
+        .orbit-dot:nth-child(3) { animation-delay: 0.3s; }
+        .orbit-dot:nth-child(4) { animation-delay: 0.6s; }
+        .orbit-dot:nth-child(5) { animation-delay: 0.9s; }
+        @keyframes orbit {
+            0%   { transform: rotate(0deg) translateX(32px) rotate(0deg);}
+            100% { transform: rotate(360deg) translateX(32px) rotate(-360deg);}
+        }
+        @keyframes center-pulse {
+            0% { transform: scale(1);}
+            100% { transform: scale(1.2);}
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loader">
+            <div class="orbit-center"></div>
+            <div class="orbit-dot"></div>
+            <div class="orbit-dot"></div>
+            <div class="orbit-dot"></div>
+            <div class="orbit-dot"></div>
+        </div>
+    </div>
+    <h1>OPENSPACE</h1>
+    <script>
+        setTimeout(function() {
+            window.location.href = "descricao-satelite.html";
+        }, 2000);
+    </script>
+</body>
+</html>
