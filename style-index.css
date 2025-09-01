@@ -355,7 +355,7 @@ body {
     }
 
     a {
-        color: #bbdcff;
+        color: #bbdcff00;
         text-decoration: none;
     }
 
@@ -517,7 +517,7 @@ body {
     }
 
     .destaque-tela {
-        background-color: rgba(43, 255, 0, 0.437);
+        background-color: rgba(43, 255, 0, 0);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -530,7 +530,7 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        background-color: rgba(0, 200, 255, 0.426);
+        background-color: rgba(0, 200, 255, 0);
     }
 
     .destaque-imagem {
@@ -548,7 +548,7 @@ body {
     .destaque-info {
         font-size: 1em;
         color: black;
-        background-color: rgba(255, 0, 0, 0.492);
+        background-color: rgba(255, 0, 0, 0);
         width: 350px;
         display: flex;
         flex-direction: column;
@@ -562,7 +562,7 @@ body {
 
     .destaque-descricao {
         font-family: 'ModernAge', Arial;
-        background-color: rgba(253, 148, 255, 0.567);
+        background-color: rgba(253, 148, 255, 0);
         padding: 10px;
         display: flex;
         flex-direction: column;
