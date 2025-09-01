@@ -329,7 +329,9 @@ body {
         padding: 0 2%;
         flex-direction: column;
     }
-} @media only screen and (max-width: 708px) {
+} 
+
+@media only screen and (max-width: 708px) {
     @font-face {
         font-family: 'CreatoDisplay';
         src: url('fontes/creato_display/CreatoDisplay-Light.otf') format('opentype');
