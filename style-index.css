@@ -8,7 +8,6 @@ html, body {
 }
 
 body {
-    font-size: 18px;
     margin: 0%;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -18,7 +17,7 @@ body {
     position: relative;
 }
 
-   @media only screen and (min-width: 601px) {
+   @media only screen and (min-width: 709px) {
 
     @font-face {
         font-family: 'CreatoDisplay';
@@ -47,6 +46,10 @@ body {
     a {
         color: #bbdcff;
         text-decoration: none;
+    }
+
+    body {
+         font-size: 18px;
     }
 
     body::-webkit-scrollbar {
@@ -107,6 +110,10 @@ body {
         color: white;
         font-family: 'CreatoDisplay', sans-serif;
         margin-right: 5px;
+    }
+
+    #menu-logo {
+        height: 45px;
     }
 
     .menu-conteudo {
@@ -304,6 +311,310 @@ body {
         font-family: 'CreatoDisplay', sans-serif;
         width: 100%;
         max-width: 100vw;
+    }
+
+    .footer-conteiner-1 {
+        background-color: rgba(255, 255, 255, 0);
+        align-items: flex-start;
+    }
+
+    .footer-conteiner-2 {
+        background-color: rgba(255, 255, 255, 0);
+        align-items: flex-end;
+    }
+
+    .footer-conteiner-1, .footer-conteiner-2 {
+        width: 50%;
+        display: flex;
+        padding: 0 2%;
+        flex-direction: column;
+    }
+} @media only screen and (max-width: 600px) {
+    @font-face {
+        font-family: 'CreatoDisplay';
+        src: url('fontes/creato_display/CreatoDisplay-Light.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'CreatoDisplayBold';
+        src: url('fontes/creato_display/CreatoDisplay-Bold.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'ModernAge';
+        src: url('fontes/modern_age/Modern_Age.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'ModernM';
+        src: url('fontes/modern_m/modern\ M.ttf') format('truetype');
+    }
+
+    p {
+        font-family: 'CreatoDisplay', sans-serif;
+    }
+
+    a {
+        color: #bbdcff;
+        text-decoration: none;
+    }
+
+    body {
+         font-size: 13px;
+    }
+
+    body::-webkit-scrollbar {
+       display: none;
+    }
+
+    .menu-imagem {
+        width: 100%;
+        max-width: 100vw;
+        height: 100vh;
+        background-image: url('imagens/menu-imagem.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        filter: brightness(60%);
+    }
+
+    .menu-cabecalho {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        max-width: 100vw;
+        height: 70px;
+        background-color: #b5b5b500;
+        backdrop-filter: blur(0);
+        transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+        padding: 0 25px 0 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-conteiner-1 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+    }
+
+    .menu-conteiner-2 {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 100%;
+        width: 50%;
+    }
+
+    #menu-cabecalho-marca {
+        font-size: 10pt;
+        font-weight: bold;
+        color: white;
+        font-family: 'CreatoDisplay', sans-serif;
+        margin-right: 5px;
+    }
+
+    #menu-logo {
+        height: 25px;
+    }
+
+    .menu-conteudo {
+        position: absolute;
+        top: 250px;
+        left: 10%;
+        width: 80%;
+        height: 200px;
+        color: white;
+        border-radius: 20px;
+        align-items: top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu-titulo {
+        font-size: 25pt;
+        font-weight: bold;
+        margin: 0;
+        font-family: 'ModernAge', sans-serif;
+        text-align: center;
+    }
+
+    #menu-conteudo-texto {
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .menu-botao-saiba-mais {
+        margin-top: 30px;
+        background-color: #ffffff;
+        color: black;
+        border-radius: 100px;
+        padding: 7px 24px;
+        text-align: center;
+        backdrop-filter: blur(0);
+        transition: all 0.3s ease, background-color 0.3s ease, color 0.3s ease, backdrop-filter 0.3s ease;
+        font-family: 'CreatoDisplay', sans-serif;
+        box-shadow: 0 0 20px #00000000;
+        font-size: 10px;
+    }
+
+    .menu-botao-saiba-mais:active {
+        box-shadow: 0 0 30px #f8ff29bb;
+        outline: 1px solid #f9ffbb;
+        text-shadow: 0 0 10px #f6ff94a7;
+        color: #f9ffbb;
+         background-color: #ffffff00;
+        color: white;
+        backdrop-filter: blur(10px);
+    }
+
+    .destaque {
+        background-color: rgba(255, 238, 0, 0);
+    }
+
+    .destaque-titulo-rolante {
+        color: black;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        translate: 0 20%;
+        height: 2.5em;
+        width: 100%;
+        max-width: 100vw;
+        font-size: 25pt;
+        z-index: 0;
+        font-family: 'CreatoDisplayBold', sans-serif;
+    }
+
+    .destaque-titulo-rolante-inner {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        animation: destaque-rolante 20s linear infinite;
+        will-change: transform;
+        min-width: 200vw; /* Garante espaço extra para o carrossel */
+    }
+
+    .destaque-titulo-rolante h2 {
+        display: inline-block;
+        margin: 0 2rem 0 0;
+        font-size: 1.5em;
+        white-space: nowrap;
+    }
+
+    @keyframes destaque-rolante {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .destaque-tela {
+        background-color: rgba(43, 255, 0, 0.437);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .destaque-tela-conteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(0, 200, 255, 0.426);
+    }
+
+    .destaque-imagem {
+        position: relative;
+        background-image: url(imagens/destaque-imagem.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        width: 300px;
+        clip-path: polygon(10% 90%, 0 50%, 10% 10%, 50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%);
+        z-index: 0;
+        margin: 10px;
+    }
+
+    .destaque-info {
+        font-size: 1em;
+        color: black;
+        background-color: rgba(255, 0, 0, 0.492);
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #destaque-info-titulo {
+        font-family: 'ModernAge', Arial;
+    }
+
+    .destaque-descricao {
+        font-family: 'ModernAge', Arial;
+        background-color: rgba(253, 148, 255, 0.567);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: fit-content;
+        margin: 10% 0;
+        max-width: 300px;
+        flex-wrap: wrap;
+    }
+
+    .destaque-botao-saiba-mais {
+        margin-top: 30px;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        border-radius: 100px;
+        padding: 7px 24px;
+        text-align: center;
+        backdrop-filter: blur(0);
+        transition: all 0.2s ease;
+        font-family: 'CreatoDisplay', sans-serif;
+        height: auto;
+        font-size: 10px;
+    }
+
+    .destaque-botao-saiba-mais:hover {
+        background-color: transparent;
+        outline: solid #000000 1.5px;
+        color: #000000;
+        box-shadow: #000000 0 0 10px;
+    }
+
+    .destaque-botao-saiba-mais:active {
+        outline: solid #112b81 1.5px;
+        box-shadow: #698d99 0 0 15px;
+        color: #2a90b3;
+    }
+
+    .footer {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+        align-items: center;
+        position: relative;
+        bottom: 0%;
+        font-family: 'CreatoDisplay', sans-serif;
+        width: 100%;
+        max-width: 100vw;
+        font-size: 10px;
     }
 
     .footer-conteiner-1 {
