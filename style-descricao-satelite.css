@@ -1,4 +1,42 @@
-body {
+@media only screen  and (min-width: 709px) {
+
+    @font-face {
+        font-family: 'CreatoDisplay';
+        src: url('fontes/creato_display/CreatoDisplay-Light.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'CreatoDisplayBold';
+        src: url('fontes/creato_display/CreatoDisplay-Bold.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'ModernAge';
+        src: url('fontes/modern_age/Modern_Age.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'ModernM';
+        src: url('fontes/modern_m/modern\ M.ttf') format('truetype');
+    }
+
+    p {
+        font-family: 'CreatoDisplay', sans-serif;
+        font-size: 12pt;
+    }
+
+    ol, li {
+        font-family: 'CreatoDisplay', sans-serif;
+        font-size: 12pt;
+        margin-left: 7px;
+    }
+
+    a {
+        color: #bbdcff;
+        text-decoration: none;
+    }
+
+    body {
     font-size: 18px;
     margin: 0%;
     overflow-x: hidden;
@@ -7,4 +45,151 @@ body {
     width: 100%;
     max-width: 100vw;
     position: relative; 
+    }
+
+    .secao-1 {
+        width: 100vw;
+        height: calc(100vh - 80px);
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        padding-bottom: 20px;
+    }
+
+    .secao-1-titulo {
+        font-family: 'ModernAge', sans-serif;
+        font-size: 43pt;
+        margin-bottom: 20px;
+    }
+
+    .secao-1-conteiner-pai-texto {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100vw;
+        margin-top: 20px;
+    }
+
+    #secao-1-conteiner-texto {
+        width: 250px;
+        padding: 10px 20px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-radius: 15px;
+    }
+
+    #secao-1-conteiner-texto > h2 {
+        font-family: 'ModernM', sans-serif;
+        font-size: 20pt;
+        margin-bottom: 10px;
+    }
+
+    .secao-2 {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .secao-2-titulo {
+        font-family: 'ModernAge', sans-serif;
+        font-size: 43pt;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .secao-2-conteiner-formulas {
+        padding: 10px 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #000000;
+        color: white;
+        width: 270px;
+        height: auto;;
+        translate: 20% -39%;
+        border-radius: 0 0 30px 30px;
+        margin-left: 0;
+    }
+
+    .secao-2-conteiner-formulas > h2 {
+        font-family: 'ModernAge', sans-serif;
+        font-size: 20pt;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .secao-2-conteiner-calculos {
+        background-color: rgba(255, 255, 255, 0);
+        width: max-content;
+        height: max-content;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        translate: 85% -100%;
+        gap: 50px;
+    }
+
+    .secao-2-conteiner-calculo-1 {
+        font-family: 'CreatoDisplay', sans-serif;
+        font-size: 14pt;
+        margin-bottom: 10px;
+        text-align: center;
+        height: 400px;
+        width: 250px;
+        background-color: rgba(255, 255, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-2-conteiner-calculo-2 {
+        font-family: 'CreatoDisplay', sans-serif;
+        font-size: 14pt;
+        margin-bottom: 10px;
+        text-align: center;
+        height: 400px;
+        width: 250px;
+        background-color: rgba(255, 255, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        bottom: 0%;
+        font-family: 'CreatoDisplay', sans-serif;
+        width: 100vw;
+        font-size: 11.5pt;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-conteiner-1 {
+        background-color: rgba(255, 255, 255, 0);
+        align-items: flex-start;
+    }
+
+    .footer-conteiner-2 {
+        background-color: rgba(255, 255, 255, 0);
+        align-items: flex-end;
+    }
+
+    .footer-conteiner-1, .footer-conteiner-2 {
+        width: 50%;
+        display: flex;
+        padding: 0 2%;
+        flex-direction: column;;
+    }
 }
